@@ -1,32 +1,10 @@
 # solved-tasks
-* task 1
+### Student's Final Grade
 ```javascript
-const a = 123;
-//Hello World!
-
-function basicOp(operation, value1, value2)
-{
-  switch (operation) {
-  case '+': return(value1 + value2);
-  case '-': return(value1 - value2);
-  case '*': return(value1 * value2);
-  case '/': return(value1 / value2);
-  }
-}
-
-
-function switchItUp(number){
-switch(number) {
-case 0: return 'Zero';
-case 1: return 'One';
-case 2: return 'Two';
-case 3: return 'Three';
-case 4: return 'Four';
-case 5: return 'Five';
-case 6: return 'Six';
-case 7: return 'Seven';
-case 8: return 'Eight';
-case 9: return 'Nine';
-}
+function finalGrade (exam, projects) {
+  if (exam > 90 || projects > 10) return 100;
+  else if (exam > 75 && projects >= 5) return 90;
+  else if (exam > 50 && projects >= 2) return 75;
+  else return 0;
 }
 ```
