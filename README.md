@@ -1,37 +1,31 @@
 # solved-tasks
-### Factorial
+### The wheat/rice and chessboard problem
 ```javascript
-function factorial(n){
-  let i = 1;
-  let a = 1;
-  
-  while(i <= n) {
-    a *= i;
-    i++;
-  }
-  return a;
+function squaresNeeded(grains){
+if (grains === 0) return 0;
+else return Math.floor(Math.log(grains) / Math.log(2) + 1);
 }
 ```
-### No zeros for heros
+
+### Sum of the first nth term of Series
 ```javascript
-function noBoringZeros(n) {
-  while (n % 10 === 0 && n !==  0) {
-  n /= 10;
+function SeriesSum(n)
+{
+   let sum = 0;
+  for(i = 0; i < n; i++){
+    sum += (1/(1 + i * 3));
   }
-  return n;
+  return sum.toFixed(2);
 }
 ```
-### Difference Of Squares
+
+### Power
 ```javascript
-function differenceOfSquares(n){
-let a = 0;
-let b = 0;
-
-
-  for (let i = 0; i <= n; i++) {
-  a += i;
-  b += Math.pow(i, 2);
-  }
-  return Math.pow(a, 2) - b;
+function numberToPower(number, power){
+ let m = 1;
+ for (let i = 0; i < power; i++) {
+ m *= number;
+ }
+ return m;
 }
 ```
