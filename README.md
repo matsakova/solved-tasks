@@ -1,30 +1,37 @@
 # solved-tasks
-### Powers of 2
+### Factorial
 ```javascript
-function powersOfTwo(n){
-let arr = [];
-  for (let i = 0; i <= n; i++) {
-  arr.push(Math.pow(2, i));
+function factorial(n){
+  let i = 1;
+  let a = 1;
+  
+  while(i <= n) {
+    a *= i;
+    i++;
   }
-  return arr;
+  return a;
 }
 ```
-
-### Power of two
+### No zeros for heros
 ```javascript
-function isPowerOfTwo(n){
-  return Math.log(n / 2)/Math.log(2) % 1 === 0;
+function noBoringZeros(n) {
+  while (n % 10 === 0 && n !==  0) {
+  n /= 10;
+  }
+  return n;
 }
 ```
-
-### Odd or Even?
+### Difference Of Squares
 ```javascript
-function oddOrEven(array) {
-   if (!array.length) return "even";
-   let sum = 0;
-   for (let i = 0; i < array.length; i++) {
-   sum += array[i];
-   }
-   return sum % 2 === 0 ? "even" : "odd";
+function differenceOfSquares(n){
+let a = 0;
+let b = 0;
+
+
+  for (let i = 0; i <= n; i++) {
+  a += i;
+  b += Math.pow(i, 2);
+  }
+  return Math.pow(a, 2) - b;
 }
 ```
