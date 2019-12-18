@@ -1,31 +1,21 @@
-# solved-tasks
-### The wheat/rice and chessboard problem
+### isReallyNaN
 ```javascript
-function squaresNeeded(grains){
-if (grains === 0) return 0;
-else return Math.floor(Math.log(grains) / Math.log(2) + 1);
-}
+const isReallyNaN = (val) => {
+if (Number.isNaN(val)) return true;
+else return false;
+};
 ```
 
-### Sum of the first nth term of Series
+### Filter the number
 ```javascript
-function SeriesSum(n)
-{
-   let sum = 0;
-  for(i = 0; i < n; i++){
-    sum += (1/(1 + i * 3));
+var FilterString = function(value) {
+  let str = '';
+  
+  for (let i = 0; i < value.length; i++) {
+    if (isNaN(value[i]) === false) {
+    str += value[i];
   }
-  return sum.toFixed(2);
-}
-```
-
-### Power
-```javascript
-function numberToPower(number, power){
- let m = 1;
- for (let i = 0; i < power; i++) {
- m *= number;
- }
- return m;
+  }
+  return +str;
 }
 ```
