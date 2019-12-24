@@ -52,3 +52,36 @@ return arr;
 
 }
 ```
+###Enumerable Magic #3 - Does My List Include This?
+```javascript
+function include(arr, item){
+  for (let i = 0; i < arr.length; i++) {
+  if (arr[i] === item) return true;
+  }
+  return false;
+}
+```
+
+### Total amount of points
+```javascript
+function points(games) {
+let sum = 0;
+  for (let i = 0; i < games.length; i++) {
+    if (games[i][0] > games[i][2]) sum += 3;
+    else if (games[i][0] < games[i][2]) sum += 0;
+    else sum += 1;
+  }
+  return sum;
+}
+```
+
+### Find the first non-consecutive number
+```javascript
+function firstNonConsecutive (arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i + 1] !== arr[i] + 1) return arr[i + 1];
+    
+  }
+    return null;
+}
+```
