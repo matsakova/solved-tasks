@@ -85,3 +85,29 @@ function firstNonConsecutive (arr) {
     return null;
 }
 ```
+
+### Santa's Naughty List
+```javascript
+function findChildren(santasList, children) {
+  let arr = santasList.filter(el => children.includes(el)).sort();
+  return arr2 = arr.filter((x, i, arr) => arr.indexOf(x) === i);
+}
+```
+
+### filterEvenLengthWords
+```javascript
+function filterEvenLengthWords(words) {
+  return arr = words.filter(el => el.length % 2 === 0);
+}
+```
+
+### Find how many times did a team from a given country win the Champions League?
+```javascript
+function countWins(winnerList, country1) {
+  let k = 0;
+  for (let i = 0; i < winnerList.length; i++) {
+    if (winnerList[i].country === country1) k++;
+  }
+  return k;
+}
+```
