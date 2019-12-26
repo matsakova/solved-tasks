@@ -111,3 +111,28 @@ function countWins(winnerList, country1) {
   return k;
 }
 ```
+
+### Remove First and Last Character Part Two
+```javascript
+function array(s){
+let arr1 = s.split(',');
+if (arr1.length === 0 || arr1.length === 1 || arr1.length === 2) return null;
+else {
+  return arr1.slice(1, -1).join(' ');
+}
+}
+```
+
+### Array plus array
+```javascript
+function arrayPlusArray(arr1, arr2) {
+  return arr1.reduce((acc, curr) => acc + curr, 0) + arr2.reduce((acc, curr) => acc + curr, 0);
+}
+```
+
+### Beginner - Reduce but Grow
+```javascript
+function grow(x){
+  return x.reduce((acc, curr) => acc * curr, 1);
+}
+```
