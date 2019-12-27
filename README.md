@@ -136,3 +136,25 @@ function grow(x){
   return x.reduce((acc, curr) => acc * curr, 1);
 }
 ```
+### Thinking & Testing : Something capitalized
+```javascript
+function testit(s){
+let str = '';
+for (let i = 0; i < s.length; i++) {
+  if (s[i + 1] === ' ' || i === s.length - 1) str += s[i].toUpperCase();
+  else str += s[i];
+}
+return str;
+}
+```
+
+### Find the capitals
+```javascript
+var capitals = function (word) {
+let arr = [];
+	for (let i = 0; i < word.length; i++) {
+    if (word[i].toUpperCase() === word[i]) arr.push(i);
+  }
+  return arr;
+};
+```
