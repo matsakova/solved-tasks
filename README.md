@@ -158,3 +158,45 @@ let arr = [];
   return arr;
 };
 ```
+
+### Can Santa save Christmas?
+```javascript
+function determineTime(d){
+let sumH = 0;
+let sumM = 0;
+let sumS = 0;
+for (let i = 0; i < d.length; i++) {
+ 
+  sumH += Number(d[i].split(':')[0]);
+  sumM += Number(d[i].split(':')[1]);
+  sumS += Number(d[i].split(':')[2]);
+  }
+
+console.log(sumH);
+return (sumH + sumM / 60 + sumS / 360) <= 24;
+}
+```
+
+### Every possible sum of two digits
+```javascript
+function digits(num){
+  let arr = num.toString().split('');
+  console.log(arr);
+  let newArr = [];
+  
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (i !== j && i < j) newArr.push(+arr[i] + +arr[j]);
+    }
+  }
+  return newArr;
+}
+```
+
+###  Exclamation marks series #2: Remove all exclamation marks from the end of sentence
+```javascript
+function remove(s){
+ return s.replace(/!+$/, '');
+  
+}
+```
