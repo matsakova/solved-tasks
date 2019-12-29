@@ -177,6 +177,19 @@ return (sumH + sumM / 60 + sumS / 360) <= 24;
 }
 ```
 
+### makeBackronym
+```javascript
+//preload variable: dict
+
+var makeBackronym = function(string){
+  let newStr = '';
+  for (let i = 0; i < string.length; i++) {
+    newStr += dict[string[i].toUpperCase()] + ' ';
+  }
+  return newStr.trimRight();
+};
+```
+
 ### Every possible sum of two digits
 ```javascript
 function digits(num){
