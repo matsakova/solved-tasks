@@ -213,3 +213,40 @@ function remove(s){
   
 }
 ```
+
+### What is my name score? #1
+```javascript
+function nameScore(name){
+let sum = 0;
+let obj = {};
+  for(let key in alpha) {
+    for (let i = 0; i < name.length; i++) {
+      if (key.includes(name[i].toUpperCase())) sum = sum + alpha[key];
+    }
+  }
+  obj[name] = sum;
+  return obj;
+}
+```
+
+### Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages
+```javascript
+function countLanguages(list) {
+  let obj = {};
+   for (let i = 0; i < list.length; i++) {
+   if (obj[list[i].language]) obj[list[i].language] += 1;
+   else obj[list[i].language] = 1;
+   }
+  return obj;
+}
+```
+
+### Job Matching #1
+```javascript
+function match(candidate, job) {
+  if (candidate.minSalary !== undefined && job.maxSalary !== undefined) {
+  return candidate.minSalary - 0.1 * candidate.minSalary <= job.maxSalary;
+  }
+ else return error;
+}
+```
