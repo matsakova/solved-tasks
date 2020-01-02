@@ -250,3 +250,71 @@ function match(candidate, job) {
  else return error;
 }
 ```
+
+### The Office II - Boredom Score
+```javascript
+function boredom(staff){
+  const obj = {
+    accounts: 1,
+    finance: 2,
+    canteen: 10,
+    regulation: 3,
+    trading: 6,
+    change: 6,
+    IS: 8,
+    retail: 5,
+    cleaning: 4,
+    'pissing about': 25,
+  }
+  let sum = 0;
+  for (let key in obj) {
+    for (let el in staff){
+    if (key === staff[el]) sum += obj[key]; 
+  }
+  }
+  if (sum <= 80) return 'kill me now';
+  else if (sum < 100 && sum > 80) return 'i can handle this';
+  else return 'party time!!';
+}
+```
+
+### Permute a Palindrome
+```javascript
+function permuteAPalindrome (input) { 
+  let obj = {};
+   if (input.length === 0 || input.length === 1) return true;
+   else if (input.length === 2 && input[0] === input[1]) return true;
+   else if (input.length === 2 && input[0] !== input[1]) return false;
+   else {
+     for (let i = 0; i < input.length; i++){
+       if (obj[input[i]]) obj[input[i]] += 1;
+       else obj[input[i]] = 1;
+     }
+   }
+   let countOdd = 0;
+   for (let key in obj) {
+    if (obj[key] % 2 === 1) countOdd += 1;
+  }
+   if (countOdd === 1 || countOdd === 0) return true;
+   else return false;
+}
+```
+
+
+### Most valuable character
+```javascript
+function solve(st) {
+  let obj = {};
+  for (let i = 0; i < st.length; i++) {
+    obj[st[i]] = st.lastIndexOf(st[i]) - st.indexOf(st[i]);
+  }
+  let arr1 = Object.values(obj);
+  let v = Math.max(...arr1);
+  let arr2 = [];
+  for (let key in obj){
+    if (obj[key] === v) arr2.push(key);
+  }
+  let arr3 = arr2.sort();
+  return arr3[0];
+}
+```
