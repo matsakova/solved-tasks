@@ -318,3 +318,21 @@ function solve(st) {
   return arr3[0];
 }
 ```
+
+### How many days are we represented in a foreign country?
+```javascript
+function daysRepresented(trips){
+   let arr = [];
+   for (let i = 0; i < trips.length; i++) {
+     for (let j = trips[i][0]; j <= trips[i][1]; j++) {
+       arr.push(j);
+     }
+   }
+  let arr1 = arr.sort();
+  let l = arr1.length;
+  for (let z = 0; z < arr1.length - 1; z++) {
+    if (arr1[z] === arr1[z+1]) l -= 1;
+  }
+  return l;
+}
+```
