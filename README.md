@@ -336,3 +336,29 @@ function daysRepresented(trips){
   return l;
 }
 ```
+
+### Beginner Series #2 Clock
+```javascript
+function past(h, m, s){
+  return s * 1000 + m * 60000 + h * 3600000;
+}
+```
+
+### Find the Slope
+```javascript
+function slope(points){
+  if (points[0] === points[2]) return 'undefined';
+  else return String((points[3] - points[1]) / (points[2] - points[0]));
+}
+```
+
+
+### Miles per gallon to kilometers per liter
+```javascript
+function converter (mpg) {
+  let a = Number(((mpg * 1.609344) / 4.54609188).toFixed(2));
+  if ((a * 10) % 1 === 0) return Number(a.toFixed(1));
+  else return a;
+}
+```
+
