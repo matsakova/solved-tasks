@@ -377,3 +377,48 @@ function isTriangle(a,b,c) {
 }
 ```
 
+### Make a function that does arithmetic!
+```javascript
+function arithmetic(a, b, operator){
+  const obj = {
+  add: a + b,
+  subtract: a - b,
+  multiply: a * b,
+  divide: a / b,
+  }
+  return obj[operator];
+}
+```
+
+### Welcome!
+```javascript
+function greet(language) {
+const obj = {
+english: 'Welcome',
+czech: 'Vitejte',
+danish: 'Velkomst',
+dutch: 'Welkom',
+estonian: 'Tere tulemast',
+finnish: 'Tervetuloa',
+flemish: 'Welgekomen',
+french: 'Bienvenue',
+german: 'Willkommen',
+irish: 'Failte',
+italian: 'Benvenuto',
+latvian: 'Gaidits',
+lithuanian: 'Laukiamas',
+polish: 'Witamy',
+spanish: 'Bienvenido',
+swedish: 'Valkommen',
+welsh: 'Croeso',
+}
+
+return obj[language] || obj.english;
+}
+```
+
+
+
+
+
+
