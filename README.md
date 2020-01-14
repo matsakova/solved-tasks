@@ -417,6 +417,60 @@ return obj[language] || obj.english;
 }
 ```
 
+### simple calculator
+```javascript
+function calculator(a,b,sign){
+  if (typeof(a) !== 'number' || typeof(b) !== 'number') return 'unknown value';
+  else if (sign !== '+' && sign !== '-' && sign !== '*' && sign !== '/') return "unknown value";
+  else {
+    switch(sign) {
+      case '+': return a + b;
+      break;
+      case '-': return a - b;
+      break;
+      case '*': return a * b;
+      break;
+      case '/': return a / b;
+    }
+  }
+}
+```
+ ### Get Planet Name By ID
+ ```javascript
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury';
+      break;
+    case 2:
+      name = 'Venus';
+      break;
+    case 3:
+      name = 'Earth';
+      break;
+    case 4:
+      name = 'Mars';
+      break;
+    case 5:
+      name = 'Jupiter';
+      break;
+    case 6:
+      name = 'Saturn';
+      break;
+    case 7:
+      name = 'Uranus';
+      break;
+    case 8:
+      name = 'Neptune'
+  }
+  
+  return name;
+}
+```
+
+
+
 
 
 
