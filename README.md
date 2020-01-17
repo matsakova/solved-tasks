@@ -469,6 +469,36 @@ function getPlanetName(id){
 }
 ```
 
+### Mumbling
+```javascript
+function accum(s) {
+let s1 = '';
+	for (let i = 0; i < s.length; i++) {
+      if (i === s.length - 1) {
+        s1 += s[i].toUpperCase() + s[i].toLowerCase().repeat(i);
+      } else {
+        s1 += s[i].toUpperCase() + s[i].toLowerCase().repeat(i) + '-';
+      }
+    }
+  return s1;
+}
+```
+
+### Vowel Count
+```javascript
+function getCount(str) {
+  let vowelsCount = 0;
+  let vowels = 'aeiou';
+  for (let i = 0; i < str.length; i++) {
+  if (vowels.includes(str[i])) vowelsCount += 1;
+  }
+  
+  
+  return vowelsCount;
+}
+```
+
+
 
 
 
