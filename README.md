@@ -523,6 +523,27 @@ let count = 0;
 }
 ```
 
+### Converting Measures
+```javascript
+function convertRecipe(recipe){
+  const arr = recipe.split(' ');
+  let full;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i-1].includes('/')) {
+      let n = arr[i-1].split('/')[0];
+      let m = arr[i-1].split('/')[1];
+      full = +n/+m;
+    } else full = +arr[i-1];
+    if (arr[i] === 'tbsp') {
+      arr[i] = arr[i] + ` (${Math.ceil(full * 15)}g)`;
+    } else if (arr[i] === 'tsp') {
+      arr[i] = arr[i] + ` (${Math.ceil(full * 5)}g)`;
+    }
+  }
+  return arr.join(' ');
+}
+```
+
 
 
 
