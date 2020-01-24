@@ -497,6 +497,33 @@ function getCount(str) {
   return vowelsCount;
 }
 ```
+ ### Rock Paper Scissors!
+ ```javascript
+const rps = (p1, p2) => {
+  if (p1 === p2) return 'Draw!';
+  else if (p1 === 'rock' && p2 === 'scissors') return 'Player 1 won!';
+  else if (p1 === 'scissors' && p2 === 'paper') return 'Player 1 won!';
+  else if (p1 === 'paper' && p2 === 'rock') return 'Player 1 won!';
+  else if (p1 === 'scissors' && p2 === 'rock') return 'Player 2 won!';
+  else if (p1 === 'paper' && p2 === 'scissors') return 'Player 2 won!';
+  else if (p1 === 'rock' && p2 === 'paper') return 'Player 2 won!';
+};
+```
+ ### The Office I - Outed
+ ```javascript
+function outed(meet, boss){
+let sum = 0;
+let count = 0;
+  for(let key in meet) {
+   if (key === boss) sum = sum + meet[key] + meet[boss];
+   else sum = sum + meet[key];
+   count += 1;
+  }
+  return (sum / count <= 5) ? 'Get Out Now!' : 'Nice Work Champ!';
+}
+```
+
+
 
 
 
