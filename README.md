@@ -544,6 +544,17 @@ function convertRecipe(recipe){
 }
 ```
 
+### Convert string to camel case
+```javascript
+function toCamelCase(str){
+let arr = str.split(/[^a-zA-Z]/g);
+  for (let i = 1; i < arr.length; i++) {
+     arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1);
+   }
+   return arr.join('');
+}
+```
+
 
 
 
