@@ -556,6 +556,31 @@ let arr = str.split(/[^a-zA-Z]/g);
 ```
 
 
+### Duck Duck Goose
+```javascript
+function duckDuckGoose(players, goose) {
+  while (players.length < goose) {
+  goose = goose - players.length;
+  }
+  return players[goose - 1].name;
+}
+```
+
+### Vowel remover
+```javascript
+function shortcut(string){
+let vowels = 'aeiou';
+let newStr = '';
+  for (let i = 0; i < string.length; i++) {
+    if (!(vowels.includes(string[i]))) newStr += string[i];
+  }
+  return newStr;
+}
+```
+
+
+
+
 
 
 
