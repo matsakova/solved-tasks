@@ -577,6 +577,31 @@ let newStr = '';
   return newStr;
 }
 ```
+### Check three and two
+```javascript
+function checkThreeAndTwo(array) {
+let count = 0;
+for (let i = 0; i < array.length; i++) {
+  for (let j = 0; j < array.length; j++) {
+    if ((array[i] === array[j]) && i < j) count += 1;
+  }
+}
+if (count === 4) return true;
+  else return false;
+}
+```
+
+### Double Char
+```javascript
+function doubleChar(str) {
+  let newStr = '';
+  for (let i = 0; i < str.length; i++) {
+    newStr += str[i] +str[i];
+  }
+  return newStr;
+}
+```
+
 
 
 
