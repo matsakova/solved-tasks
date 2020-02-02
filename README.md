@@ -265,7 +265,7 @@ function boredom(staff){
     retail: 5,
     cleaning: 4,
     'pissing about': 25,
-  }
+  };
   let sum = 0;
   for (let key in obj) {
     for (let el in staff){
@@ -385,7 +385,7 @@ function arithmetic(a, b, operator){
   subtract: a - b,
   multiply: a * b,
   divide: a / b,
-  }
+  };
   return obj[operator];
 }
 ```
@@ -411,7 +411,7 @@ polish: 'Witamy',
 spanish: 'Bienvenido',
 swedish: 'Valkommen',
 welsh: 'Croeso',
-}
+};
 
 return obj[language] || obj.english;
 }
@@ -601,6 +601,32 @@ function doubleChar(str) {
   return newStr;
 }
 ```
+
+### Get the Middle Character
+```javascript
+function getMiddle(s)
+{
+ for (let i = 0; i < s.length; i++) {
+ if (s.length % 2 === 0) return s[s.length/2 - 1] + s[s.length/2];
+ else return s[Math.floor(s.length / 2)];
+ }
+}
+```
+
+### Square Every Digit
+```javascript
+function squareDigits(num){
+  let str = num.toString();
+  let newStr ='';
+  
+  for (let i = 0; i < str.length; i++) {
+    newStr += Math.pow(str[i], 2);
+  }
+  return +newStr;
+}
+```
+
+
 
 
 
