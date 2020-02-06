@@ -626,6 +626,35 @@ function squareDigits(num){
 }
 ```
 
+### Exes and Ohs
+```javascript
+function XO(str) {
+let countX = 0;
+let countO = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].toLowerCase() === 'x') countX += 1;
+    else if (str[i].toLowerCase() === 'o') countO += 1;
+  }
+  return countX === countO ? true : false;
+}
+```
+
+
+### Shortest Word
+```javascript
+function findShort(s){
+const array = s.split(' ');
+const newArray = [];
+
+ for (let i = 0; i < array.length; i++) {
+   newArray.push(array[i].length);
+ }
+  newArray.sort(function(a,b) {return a - b;});
+  return newArray[0];
+
+}
+```
+
 
 
 
