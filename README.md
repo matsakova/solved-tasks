@@ -655,6 +655,54 @@ const newArray = [];
 }
 ```
 
+### Friend or Foe?
+```javascript
+function friend(friends){
+  const arr = [];
+  for (let i = 0; i < friends.length; i++) {
+    if (friends[i].length === 4 && typeof(friends[i]) === 'string') arr.push(friends[i]);
+  }
+  return arr;
+}
+```
+
+### Isograms
+```javascript
+function isIsogram(str){
+const arr = str.split('');
+  for (let i = 0; i < arr.length; i++) {
+   for (let y = 0; y < arr.length; y++) {
+     if (arr[i].toLowerCase() === arr[y].toLowerCase() && i !== y) return false;
+   }
+  }
+  return true;
+}
+```
+
+### Categorize New Member
+```javascript
+function openOrSenior(data){
+const arr = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i][0] >= 55 && data[i][1] > 7) arr.push('Senior');
+    else arr.push('Open');
+  }
+  return arr;
+}
+```
+
+### Two to One
+```javascript
+function longest(s1, s2) {
+  const arr = (s1 + s2).split('');
+  const newArr = arr.sort();
+  const array = newArr.filter((el, i) => newArr.indexOf(el) === i);
+  
+  return array.join('');
+}
+```
+
+
 
 
 
