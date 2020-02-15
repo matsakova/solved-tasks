@@ -702,6 +702,24 @@ function longest(s1, s2) {
 }
 ```
 
+### Jaden Casing Strings
+```javascript
+String.prototype.toJadenCase = function () {
+  const array = this.split(' ');
+  for (let i = 0; i < array.length; i++) {
+    array[i] = array[i][0].toUpperCase() + array[i].slice(1);
+  } 
+  return array.join(' ');
+};
+```
+
+### Will there be enough space?
+```javascript
+function enough(cap, on, wait) {
+  return (cap - (on + wait)) >= 0 ? 0 : Math.abs(cap - (on + wait));
+}
+```
+
 
 
 
