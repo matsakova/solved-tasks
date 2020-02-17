@@ -720,6 +720,24 @@ function enough(cap, on, wait) {
 }
 ```
 
+### Is the string uppercase?
+```javascript
+String.prototype.isUpperCase = function() {
+  for (let i = 0; i < this.length; i++) {
+    if (this[i].toUpperCase() !== this[i]) return false;
+  }
+  return true;
+}
+```
+
+### Twice as old
+```javascript
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  if(sonYearsOld * 2 === dadYearsOld) return 0;
+  else return Math.abs(dadYearsOld - sonYearsOld * 2);
+}
+```
+
 
 
 
