@@ -764,6 +764,25 @@ function rentalCarCost(d) {
 }
 ```
 
+### Training JS #6: Basic data types--Boolean and conditional statements if..else
+```javascript
+function trueOrFalse(val){
+  if (Boolean(val) == true) return 'true';             
+  else return 'false';
+}
+```
+
+### Fix the Bugs (Syntax) - My First Kata
+```javascript
+function myFirstKata(a,b) {
+  if (typeof(a) !== "number" || typeof(b) !== "number") {
+    return false;
+  } else {
+    return a % b + b % a;
+  }
+}
+```
+
 
 
 
