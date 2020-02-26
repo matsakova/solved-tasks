@@ -783,6 +783,15 @@ function myFirstKata(a,b) {
 }
 ```
 
+### All Star Code Challenge #22
+```javascript
+function toTime(seconds) {
+  let h = Math.floor(seconds / 3600);
+  let min = Math.floor((seconds / 3600 - h) * 60);
+  return `${h} hour(s) and ${min} minute(s)`;
+}
+```
+
 
 
 
