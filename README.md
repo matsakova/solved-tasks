@@ -792,6 +792,13 @@ function toTime(seconds) {
 }
 ```
 
+### Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence
+```javascript
+function replace(s){
+  return s.replace(/[aeiouAEIOU]/gi, '!');
+}
+```
+
 
 
 
