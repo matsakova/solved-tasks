@@ -799,6 +799,13 @@ function replace(s){
 }
 ```
 
+### Get Nth Even Number
+```javascript
+function nthEven(n){
+  return (n - 1) * 2;
+}
+```
+
 
 
 
