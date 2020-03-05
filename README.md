@@ -806,6 +806,19 @@ function nthEven(n){
 }
 ```
 
+### Numbers to Objects
+```javascript
+function numObj(s){
+  let arr = [];
+  for (let i = 0; i < s.length; i++) {
+    arr[i] = {};
+    arr[i][s[i]] = String.fromCharCode(s[i]);
+  }
+  return arr;
+}
+```
+
+
 
 
 
