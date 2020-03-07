@@ -827,6 +827,22 @@ function twoOldestAges(ages){
 }
 ```
 
+### Unique In Order
+```javascript
+var uniqueInOrder=function(iterable){
+let arr = [];
+let next = '';
+  
+  for(let i = 0; i < iterable.length; i++){
+    if(iterable[i] !== next) {
+      next = iterable[i];
+      arr.push(next);
+    }
+  }
+  return arr;
+}
+```
+
 
 
 
