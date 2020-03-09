@@ -843,6 +843,13 @@ let next = '';
 }
 ```
 
+### Array.diff
+```javascript
+function array_diff(a, b) {
+  return arr = a.filter(el => !b.includes(el));
+}
+```
+
 
 
 
