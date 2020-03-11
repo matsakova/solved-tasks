@@ -850,6 +850,18 @@ function array_diff(a, b) {
 }
 ```
 
+### Remove the minimum
+```javascript
+function removeSmallest(numbers) {
+  let min = Math.min(...numbers);
+  let arr = [];
+    for (let i = 0; i < numbers.length; i++) {
+      if (i !== numbers.indexOf(min)) arr.push(numbers[i]);
+    }
+    return arr;
+}
+```
+
 
 
 
